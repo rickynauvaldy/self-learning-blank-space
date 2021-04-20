@@ -28,7 +28,6 @@ def self_learn_blank_space():
     _, _, filenames = next(walk(data_path))
     all_data = []
 
-    filenames = filenames[:1]
     print('File count:' + str(len(filenames)))
     empty_count = 0
 
