@@ -112,7 +112,7 @@ The desired output looks like the following:
 - define `concat_name` function for further use in transforming nested JSON to a comma seperated value
 - Set data_path to match your resources folder
 - get all filenames
-- for each filename, `json.load()` the row and append to a list
+- for each filename, check whether the file is empty (skipped if it is), `json.load()` the row and append to a list
 - Progress print is available per `counter` rows
 - `genres` and `spoken_languages` column is transformed using the `concat_name` function
 - Transform the dataframe into json
