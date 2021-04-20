@@ -80,30 +80,30 @@ The desired output looks like the following:
 
 ```
 [
-	{
-		"original_title": "Lock, Stock and Two Smoking Barrels",
-		"budget": 1350000,
-		"genres": "Comedy, Crime",
-		"popularity": 7119,
-		"release_date": "1998-03-05",
-		"revenue": 28356188,
-		"runtime": 105,
-		"vote_average": 8.2,
-		"vote_count": 4048,
-		"spoken_languages": "English"
-	},
-	{
-		"original_title": "Verfolgt",
-		"budget": 0,
-		"genres": "Drama",
-		"popularity": 5331,
-		"release_date": "2006-08-06",
-		"revenue": 0,
-		"runtime": 87,
-		"vote_average": 4.9,
-		"vote_count": 11,
-		"spoken_languages": "Deutsch"
-	}
+  {
+    "original_title": "Lock, Stock and Two Smoking Barrels",
+    "budget": 1350000,
+    "genres": "Comedy, Crime",
+    "popularity": 7119,
+    "release_date": "1998-03-05",
+    "revenue": 28356188,
+    "runtime": 105,
+    "vote_average": 8.2,
+    "vote_count": 4048,
+    "spoken_languages": "English"
+  },
+  {
+    "original_title": "Verfolgt",
+    "budget": 0,
+    "genres": "Drama",
+    "popularity": 5331,
+    "release_date": "2006-08-06",
+    "revenue": 0,
+    "runtime": 87,
+    "vote_average": 4.9,
+    "vote_count": 11,
+    "spoken_languages": "Deutsch"
+  }
 ]
 ```
 
