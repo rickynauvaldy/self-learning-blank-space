@@ -123,8 +123,11 @@ The desired output looks like the following:
 - Configure the `data_path` to match your resources folder, i.e. the folder of the JSON files
 - Run the program by running this script `python main.py`
 
+# Output
+Output of this file is to large to be pushed to GitHub. You can find it in this link https://drive.google.com/file/d/1-xYN0chqzeZ9YfVYQDDmUrNLy7QHHcr3/view?usp=sharing
+
 # Notes
-- Compiled data is not cleaned enough as the author notices some empty value in "spoken_languages" key
+- Compiled data is not cleaned enough as the author notices some empty values in "spoken_languages" key
 - As the JSON files that need to be processed consist of 500,000+ files, it took a long time to finish
 - Unicode character is stored as the unicode (e.g. Espa\u00f1ol in Espanol)
 - This code is made as a Self-Learning Module Part 1 to Academi by blank-space Data Engineering Track (https://www.blank-space.io/program)
