@@ -13,94 +13,99 @@ Examples of 100 JSON files that need to be compiled are available in the resourc
 
 One of it sample data looks like the following:
 
+```
 {
-<br>  "adult": false,
-<br>  "backdrop_path": "/kpuTCMw3v2AuKjqGS7383uWbc8V.jpg",
-<br>  "belongs_to_collection": null,
-<br>  "budget": 0,
-<br>  "genres": [
-<br>    {
-<br>      "id": 18,
-<br>      "name": "Drama"
-<br>    },
-<br>    {
-<br>      "id": 80,
-<br>      "name": "Crime"
-<br>    },
-<br>    {
-<br>      "id": 35,
-<br>      "name": "Comedy"
-<br>    }
-<br>  ],
-<br>  "homepage": "",
-<br>  "id": 2,
-<br>  "imdb_id": "tt0094675",
-<br>  "original_language": "fi",
-<br>  "original_title": "Ariel",
-<br>  "overview": "Taisto Kasurinen is a Finnish coal miner whose father has just committed suicide and who is framed for a crime he did not commit. In jail, he starts to dream about leaving the country and starting a new life. He escapes from prison but things don't go as planned...",
-<br>  "popularity": 10.764,
-<br>  "poster_path": "/ojDg0PGvs6R9xYFodRct2kdI6wC.jpg",
-<br>  "production_companies": [
-<br>    {
-<br>      "id": 2303,
-<br>      "logo_path": null,
-<br>      "name": "Villealfa Filmproductions",
-<br>      "origin_country": "FI"
-<br>    }
-<br>  ],
-<br>  "production_countries": [
-<br>    {
-<br>      "iso_3166_1": "FI",
-<br>      "name": "Finland"
-<br>    }
-<br>  ],
-<br>  "release_date": "1988-10-21",
-<br>  "revenue": 0,
-<br>  "runtime": 73,
-<br>  "spoken_languages": [
-<br>    {
-<br>      "iso_639_1": "fi",
-<br>      "name": "suomi"
-<br>    },
-<br>    {
-<br>      "iso_639_1": "de",
-<br>      "name": "Deutsch"
-<br>    }
-<br>  ],
-<br>  "status": "Released",
-<br>  "tagline": "",
-<br>  "title": "Ariel",
-<br>  "video": false,
-<br>  "vote_average": 6.8,
-<br>  "vote_count": 105
-<br>}
-
+  "adult": false,
+  "backdrop_path": "/kpuTCMw3v2AuKjqGS7383uWbc8V.jpg",
+  "belongs_to_collection": null,
+  "budget": 0,
+  "genres": [
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 80,
+      "name": "Crime"
+    },
+    {
+      "id": 35,
+      "name": "Comedy"
+    }
+  ],
+  "homepage": "",
+  "id": 2,
+  "imdb_id": "tt0094675",
+  "original_language": "fi",
+  "original_title": "Ariel",
+  "overview": "Taisto Kasurinen is a Finnish coal miner whose father has just committed suicide and who is framed for a crime he did not commit. In jail, he starts to dream about leaving the country and starting a new life. He escapes from prison but things don't go as planned...",
+  "popularity": 10.764,
+  "poster_path": "/ojDg0PGvs6R9xYFodRct2kdI6wC.jpg",
+  "production_companies": [
+    {
+      "id": 2303,
+      "logo_path": null,
+      "name": "Villealfa Filmproductions",
+      "origin_country": "FI"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "FI",
+      "name": "Finland"
+    }
+  ],
+  "release_date": "1988-10-21",
+  "revenue": 0,
+  "runtime": 73,
+  "spoken_languages": [
+    {
+      "iso_639_1": "fi",
+      "name": "suomi"
+    },
+    {
+      "iso_639_1": "de",
+      "name": "Deutsch"
+    }
+  ],
+  "status": "Released",
+  "tagline": "",
+  "title": "Ariel",
+  "video": false,
+  "vote_average": 6.8,
+  "vote_count": 105
+}
+```
 The desired output looks like the following:
 
-{
-<br>"original_title": "Lock, Stock and Two Smoking Barrels",
-<br>"budget": 1350000,
-<br>"genres": "Comedy, Crime",
-<br>"popularity": 7119,
-<br>"release_date": "1998-03-05",
-<br>"revenue": 28356188,
-<br>"runtime": 105,
-<br>"vote_average": 8.2,
-<br>"vote_count": 4048,
-<br>"spoken_languages": "English"
-<br>},
-{
-<br>"original_title": "Verfolgt",
-<br>"budget": 0,
-<br>"genres": "Drama",
-<br>"popularity": 5331,
-<br>"release_date": "2006-08-06",
-<br>"revenue": 0,
-<br>"runtime": 87,
-<br>"vote_average": 4.9,
-<br>"vote_count": 11,
-<br>"spoken_languages": "Deutsch"
-<br>}
+```
+[
+	{
+		"original_title": "Lock, Stock and Two Smoking Barrels",
+		"budget": 1350000,
+		"genres": "Comedy, Crime",
+		"popularity": 7119,
+		"release_date": "1998-03-05",
+		"revenue": 28356188,
+		"runtime": 105,
+		"vote_average": 8.2,
+		"vote_count": 4048,
+		"spoken_languages": "English"
+	},
+	{
+		"original_title": "Verfolgt",
+		"budget": 0,
+		"genres": "Drama",
+		"popularity": 5331,
+		"release_date": "2006-08-06",
+		"revenue": 0,
+		"runtime": 87,
+		"vote_average": 4.9,
+		"vote_count": 11,
+		"spoken_languages": "Deutsch"
+	}
+]
+```
 
 # Flow
 - Import required modules
